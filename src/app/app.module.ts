@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NovaTransferenciaComponent } from './nova-transferencia/nova-transferencia.component';
 import { FormsModule } from '@angular/forms';
+import { GridListComponent } from './grid-list/grid-list.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NovaTransferenciaComponent
+    NovaTransferenciaComponent,
+    GridListComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
