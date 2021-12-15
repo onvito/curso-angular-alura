@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { GridListComponent } from './grid-list/grid-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -17,11 +18,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavbarComponent
   ],
   imports: [
+    FlexLayoutModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
